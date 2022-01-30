@@ -1,0 +1,49 @@
+*{
+  margin: 0;  
+  padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+h1, h2, h3{
+    color: #688A5A;
+}
+
+p{
+    color: #000;
+}
+
+header, footer{
+    background-color: #0B5D83;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: #ffffff;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+
+
+/*class selctors -------------------*/
+.page{
+    max-width: 960px;
+    margin: 1rem auto;
+}
+
+.social img{
+    width: 50px;
+    height: 50px;
+}
+
+.grid img{
+    max-height: 300px;
+}
