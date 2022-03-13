@@ -216,6 +216,8 @@ hr{
     border-style: solid;
     text-align: center;
     font-size: 2vw;
+    display: grid;
+    grid-template-rows: .1fr 1fr;
 }
 
 .snakeCard p, .salmonCard p{
@@ -233,6 +235,10 @@ hr{
 
 .salmonCard{
     grid-column: 3/4;
+}
+
+.price{
+
 }
 
 /*------------------------------*/
