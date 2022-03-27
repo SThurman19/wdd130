@@ -1,0 +1,39 @@
+/*
+#17252a
+#2b7a78
+#3aafa9
+#def2f1
+#FEFFFF
+*/
+
+*{
+    background-color: #3aafa9;
+}
+
+.hero img{
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+}
+
+h1{
+    color: #17252a;
+}
+
+h2{
+    color: #def2f1;
+}
+
+p{
+    color: #def2f1;
+}
+
+button{
+    background-color: #2b7a78;
+    color: #def2f1;
+    border: none;
+    width: 7em;
+    height: 3em;
+}
