@@ -10,14 +10,15 @@
 <body>
     <nav class="navbar">
         <a href="index.html">Home</a>
-        <img src="images\dailyLogo.png" alt="Logo" class="logo" />
+        <img src="images/dailyLogo.png" alt="Logo" class="logo" />
         <a href="post.html">Post</a>
       </nav>
 
-    <div class="friends">
+    
         <div class="hero">
             <h1>Friends</h1>
         </div>
+    <div class="friends">
         <button class="accordion">Lily Edholm</button>
         <div class="panel">
             <p>
@@ -26,7 +27,7 @@
                 quos, recusandae distinctio architecto neque! Magni repellendus illo
                 aliquid harum? Unde.
               </p>
-              <button type="button" id="like-button">
+              <button type="button" class="like-button">
                 <svg
                   class="heart-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +39,7 @@
                 </svg>
                 Like
               </button>
-              <button id="comment-button">Comment</button>
+              <button class="comment-button">Comment</button>
         </div>
     
         <button class="accordion">Aubry Snook</button>
@@ -49,7 +50,7 @@
                 quos, recusandae distinctio architecto neque! Magni repellendus illo
                 aliquid harum? Unde.
               </p>
-              <button type="button" id="like-button">
+              <button type="button" class="like-button">
                 <svg
                   class="heart-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,18 +62,19 @@
                 </svg>
                 Like
               </button>
-              <button id="comment-button">Comment</button>
+              <button class="comment-button">Comment</button>
         </div>
     
         <button class="accordion">Marina Warnes</button>
         <div class="panel">
+            <img src="https://picsum.photos/400/200" alt="" />
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
                 praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
                 quos, recusandae distinctio architecto neque! Magni repellendus illo
                 aliquid harum? Unde.
               </p>
-              <button type="button" id="like-button">
+              <button type="button" class="like-button">
                 <svg
                   class="heart-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +86,7 @@
                 </svg>
                 Like
               </button>
-              <button id="comment-button">Comment</button>
+              <button class="comment-button">Comment</button>
         </div>
 
         <button class="accordion">Adrienne</button>
@@ -95,7 +97,7 @@
                 quos, recusandae distinctio architecto neque! Magni repellendus illo
                 aliquid harum? Unde.
               </p>
-              <button type="button" id="like-button">
+              <button type="button" class="like-button">
                 <svg
                   class="heart-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,18 +109,19 @@
                 </svg>
                 Like
               </button>
-              <button id="comment-button">Comment</button>
+              <button class="comment-button">Comment</button>
         </div>
 
         <button class="accordion">Spencer Thurman</button>
         <div class="panel">
+            <img src="https://picsum.photos/200" alt="" />
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
                 praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
                 quos, recusandae distinctio architecto neque! Magni repellendus illo
                 aliquid harum? Unde.
               </p>
-              <button type="button" id="like-button">
+              <button type="button" class="like-button">
                 <svg
                   class="heart-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,18 +151,6 @@
               }
             });
           }
-
-          document.addEventListener(
-      "DOMContentLoaded",
-      function () {
-        var likeButton = document.getElementById("like-button");
-        likeButton.addEventListener("click", function () {
-          window.lb = likeButton;
-          likeButton.classList.toggle("selected");
-        });
-      },
-      false
-    );
         </script>
     </div>
 

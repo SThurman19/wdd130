@@ -8,41 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <script>
-    document.addEventListener(
-      "DOMContentLoaded",
-      function () {
-        var likeButton = document.getElementById("like-button");
-        likeButton.addEventListener("click", function () {
-          window.lb = likeButton;
-          likeButton.classList.toggle("selected");
-        });
-      },
-      false
-    );
-  </script>
-
   <body>
     <nav class="navbar">
       <a href="post.html">Post</a>
-      <img src="images\dailyLogo.png" alt="Logo" class="logo" />
+      <img src="images/dailyLogo.png" alt="Logo" class="logo" />
       <a href="friends.html">Friends</a>
     </nav>
-    
+
     <div class="hero">
       <h1>Today's Posts</h1>
     </div>
 
     <div class="postArea">
       <div class="post">
-        <h2>John Doe</h2>
+        <h2>Aubry Snook</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
           praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
           quos, recusandae distinctio architecto neque! Magni repellendus illo
           aliquid harum? Unde.
         </p>
-        <button type="button" id="like-button">
+        <button type="button" class="like-button">
           <svg
             class="heart-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,11 +40,11 @@
           </svg>
           Like
         </button>
-        <button id="comment-button">Comment</button>
+        <button class="comment-button">Comment</button>
       </div>
 
       <div class="post">
-        <h2>John Doe</h2>
+        <h2>Marina Warnes</h2>
         <img src="https://picsum.photos/200" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
@@ -66,7 +52,7 @@
           quos, recusandae distinctio architecto neque! Magni repellendus illo
           aliquid harum? Unde.
         </p>
-        <button type="button" id="like-button">
+        <button type="button" class="like-button">
           <svg
             class="heart-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -78,18 +64,18 @@
           </svg>
           Like
         </button>
-        <button id="comment-button">Comment</button>
+        <button class="comment-button">Comment</button>
       </div>
 
       <div class="post">
-        <h2>John Doe</h2>
+        <h2>Adrienne</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
           praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
           quos, recusandae distinctio architecto neque! Magni repellendus illo
           aliquid harum? Unde.
         </p>
-        <button type="button" id="like-button">
+        <button type="button" class="like-button">
           <svg
             class="heart-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -101,18 +87,18 @@
           </svg>
           Like
         </button>
-        <button id="comment-button">Comment</button>
+        <button class="comment-button">Comment</button>
       </div>
 
       <div class="post">
-        <h2>John Doe</h2>
+        <h2>Spencer Thurman</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
           praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
           quos, recusandae distinctio architecto neque! Magni repellendus illo
           aliquid harum? Unde.
         </p>
-        <button type="button" id="like-button">
+        <button type="button" class="like-button">
           <svg
             class="heart-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +110,7 @@
           </svg>
           Like
         </button>
-        <button id="comment-button">Comment</button>
+        <button class="comment-button">Comment</button>
       </div>
     </div>
 

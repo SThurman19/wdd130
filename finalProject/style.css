@@ -79,19 +79,19 @@ nav{
 
 /*--------------------------------------------*/
 
-.postArea{
+.postArea, .friends{
     margin: 50px 10vw ;
     justify-content: center;
     align-items: center;
 }
 
-.post{
+.post, .panel{
     margin: 2rem;
     padding: 1rem;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.post, .post h2{
+.post, .post h2, .panel{
     border-radius: 20px;
 }
 
@@ -130,7 +130,76 @@ h3{
 /*--------------------------------------------*/
 
 
-#like-button {
+button.like-button {
+  color: gray;
+  background-color: #3aafa9;
+  font-size: .75rem;
+  background-color: transparent;
+  border: 0.1em solid;
+  border-radius: 1em;
+  padding: 0.333em 1em 0.25em;
+  margin: .5rem;
+  margin-bottom: 0;
+  line-height: 1.2em;
+  box-shadow: 0 0.25em 1em -0.25em;
+  cursor: pointer;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+  outline: 0;
+}
+  
+  button.like-button:hover {
+    color: red;
+  }
+  
+  button.like-button:active {
+    transform: scale(0.95);
+  }
+  
+  button.like-button.selected {
+    color: white;
+    background-color: red;
+    border-color: red;
+  }
+  
+  .heart-icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.2em;
+  }
+
+button.comment-button{
+  color: gray;
+  background-color: #3aafa9;
+  font-size: .75rem;
+  background-color: transparent;
+  border: 0.1em solid;
+  border-radius: 1em;
+  padding: 0.333em 1em 0.25em;
+  margin: .5rem 0 0 0;
+  margin-bottom: 0;
+  line-height: 1.2em;
+  box-shadow: 0 0.25em 1em -0.25em;
+  cursor: pointer;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+  outline: 0;
+}
+
+button.comment-button:hover {
+  color: #3aafa9;
+}
+
+button.comment-button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+/* #like-button {
     color: gray;
     background-color: #3aafa9;
     font-size: .75rem;
@@ -192,13 +261,8 @@ h3{
   
 #comment-button:active {
     transform: scale(0.95);
-}
-  
-#comment-button.selected {
-    color: white;
-    background-color: red;
-    border-color: red;
-}
+} */
+
 
 /*-----------------------------------------------*/
 
@@ -211,6 +275,7 @@ h3{
 #contact textarea,
 #contact button[type="submit"] {
   font: 400 12px/16px ;
+  border-radius: 20px;
 }
 
 #contact {
@@ -218,6 +283,7 @@ h3{
   padding: 25px;
   margin: 100px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
 }
 
 #contact h3 {
@@ -269,7 +335,7 @@ fieldset {
   color: #def2f1;
   margin: 0 0 5px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #contact button[type="submit"]:hover {
@@ -334,3 +400,4 @@ fieldset {
     background-color: #def2f1;
     overflow: hidden;
   }
+  
