@@ -8,6 +8,175 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <img src="images\dailyLogo.png" alt="Logo" class="logo" />
+        <a href="post.html">Post</a>
+      </nav>
 
+    <div class="friends">
+        <div class="hero">
+            <h1>Friends</h1>
+        </div>
+        <button class="accordion">Lily Edholm</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
+                praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
+                quos, recusandae distinctio architecto neque! Magni repellendus illo
+                aliquid harum? Unde.
+              </p>
+              <button type="button" id="like-button">
+                <svg
+                  class="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"
+                  />
+                </svg>
+                Like
+              </button>
+              <button id="comment-button">Comment</button>
+        </div>
+    
+        <button class="accordion">Aubry Snook</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
+                praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
+                quos, recusandae distinctio architecto neque! Magni repellendus illo
+                aliquid harum? Unde.
+              </p>
+              <button type="button" id="like-button">
+                <svg
+                  class="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"
+                  />
+                </svg>
+                Like
+              </button>
+              <button id="comment-button">Comment</button>
+        </div>
+    
+        <button class="accordion">Marina Warnes</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
+                praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
+                quos, recusandae distinctio architecto neque! Magni repellendus illo
+                aliquid harum? Unde.
+              </p>
+              <button type="button" id="like-button">
+                <svg
+                  class="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"
+                  />
+                </svg>
+                Like
+              </button>
+              <button id="comment-button">Comment</button>
+        </div>
+
+        <button class="accordion">Adrienne</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
+                praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
+                quos, recusandae distinctio architecto neque! Magni repellendus illo
+                aliquid harum? Unde.
+              </p>
+              <button type="button" id="like-button">
+                <svg
+                  class="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"
+                  />
+                </svg>
+                Like
+              </button>
+              <button id="comment-button">Comment</button>
+        </div>
+
+        <button class="accordion">Spencer Thurman</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem
+                praesentium qui deserunt vel ab quisquam voluptate voluptates nostrum
+                quos, recusandae distinctio architecto neque! Magni repellendus illo
+                aliquid harum? Unde.
+              </p>
+              <button type="button" id="like-button">
+                <svg
+                  class="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"
+                  />
+                </svg>
+                Like
+              </button>
+              <button id="comment-button">Comment</button>
+        </div>
+    
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+    
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+
+          document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        var likeButton = document.getElementById("like-button");
+        likeButton.addEventListener("click", function () {
+          window.lb = likeButton;
+          likeButton.classList.toggle("selected");
+        });
+      },
+      false
+    );
+        </script>
+    </div>
+
+
+    <footer>
+      <h3>Spencer Thurman (999)-999-9999</h3>
+      <div class="social">
+        <a href="https://www.facebook.com"
+          ><img src="images/facebookLogo.png" alt="Youtube Logo"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="images/twitterLogo.png" alt="Twitter Logo"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/instagramLogo.png" alt="Instagram Logo"
+        /></a>
+      </div>
+    </footer>  
 </body>
 </html>
